@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
+    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
+    <title>INSTAGRAM_CLONE</title>
+</head>
+<body>
+    <div>
+        <!-- heading start-->
+     <div class="Heading">
+        <h1> Instagram <h1>
+     </div>
+     <!-- heading end-->
+     <!-- navbar starts-->
+     <div class="navbar">
+        <div>
+            <h1>Home </h1>
+        </div>
+
+        <div>
+            <h1>Search </h1>
+        </div>
+
+        <div>
+            <h1>Explore </h1>
+        </div>
+
+        <div>
+            <h1> Reels</h1>
+        </div>
+
+        <div>
+            <h1>Messages </h1>
+        </div>
+
+        <div>
+            <h1>Notification </h1>
+        </div>
+
+        <div>
+            <h1> Create</h1>
+        </div>
+
+        <div>
+            <h1>Profile </h1>
+        </div>
+     </div>
+     <!-- navbar ends-->
+     <!--more starts -->
+     <div>
+        <h1>More</h1>
+    </div>
+    <!-- more ends-->
+    </div> 
+   
+    {% block content %}
+
+
+    {% endblock %}
