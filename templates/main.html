@@ -1,62 +1,63 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
-    <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet">
-    <title>INSTAGRAM_CLONE</title>
-</head>
+{% load static %}
 <body>
     <div>
         <!-- heading start-->
      <div class="Heading">
-        <h1> Instagram <h1>
+        <h1> <span> <img src="static/images/instagram.png" alt="Instagram" width="24px" height ="24px"> </span>  Instagram <h1>
      </div>
      <!-- heading end-->
      <!-- navbar starts-->
      <div class="navbar">
+    <a href="{% url 'home' %}">
         <div>
-            <h1>Home </h1>
+            <h1> <span>  <img src="static/images/home.png" alt="Home" width="22px" height ="22px"></span>   Home </h1>
         </div>
+    </a>
+    <a href="{% url 'search' %}">
+        <div>
+            <h1> <span>  <img src="static/images/transparency.png" alt="Search" width="22px" height ="22px"></span>   Search </h1>
+        </div>
+    </a>
+    <a href="{% url 'explore' %}">
 
         <div>
-            <h1>Search </h1>
+            <h1><span>  <img src="static/images/compass.png" alt="Explore" width="22px" height ="22px"></span>   Explore </h1>
         </div>
-
+    </a>
+    <a href="{% url 'reels' %}">
         <div>
-            <h1>Explore </h1>
+            <h1><span>  <img src="static/images/video.png" alt="Reels"width="22px" height ="22px"></span>   Reels</h1>
         </div>
-
+    </a>
+    <a href="{% url 'messages' %}">
         <div>
-            <h1> Reels</h1>
+            <h1><span>  <img src="static/images/chat.png" alt="Messages"width="22px" height ="22px"></span>   Messages </h1>
         </div>
-
+    </a>
+    <a href="{% url 'notification' %}">
         <div>
-            <h1>Messages </h1>
+            <h1><span>  <img src="static/images/heart.png" alt="Notification"width="22px" height ="22px"></span>   Notification </h1>
         </div>
-
+    </a>
+    <a href="{% url 'create' %}">
         <div>
-            <h1>Notification </h1>
+            <h1><span>  <img src="static/images/tab.png" alt="Create"width="22px" height ="22px"></span>    Create</h1>
         </div>
-
+    </a>
+    <a href="{% url 'profile' %}">
         <div>
-            <h1> Create</h1>
+            <h1><span>  <img src="static/images/user.png" alt="Profile"width="22px" height ="22px"></span>    Profile </h1>
         </div>
-
-        <div>
-            <h1>Profile </h1>
-        </div>
+    </a>
      </div>
      <!-- navbar ends-->
      <!--more starts -->
      <div>
-        <h1>More</h1>
+        <a href="{% url 'more' %}">
+        <h1><span>  <img src="static/images/menu-burger.png" alt="More" width="24px" height ="24px"></span>    More</h1>
     </div>
+      </a>
     <!-- more ends-->
     </div> 
    
