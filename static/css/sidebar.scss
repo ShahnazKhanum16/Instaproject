@@ -11,23 +11,35 @@
         justify-content: space-between;
         align-items: center;
         gap: 20px;
-    }
-    .navbar{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 20px;
-        margin-top: 30px;
-        a{
-            text-decoration: none;
 
-            img{
-                width: 24px;
+        .Heading{
+            .insta_logo{
+                img{
+                    width: 24px;
+                    display: none;
+                }
             }
         }
-        
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 30px;
+            a{
+                text-decoration: none;
+    
+                img{
+                    width: 24px;
+                }
+            }
+            
+        }
     }
 
-    .bottomContainer{
+     
+    
+    
+
+    
     }
-}

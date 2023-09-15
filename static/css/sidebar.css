@@ -12,16 +12,20 @@
   align-items: center;
   gap: 20px;
 }
-.sidebar_container .navbar {
+.sidebar_container .topContainer .Heading .insta_logo img {
+  width: 24px;
+  display: none;
+}
+.sidebar_container .topContainer .navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
   margin-top: 30px;
 }
-.sidebar_container .navbar a {
+.sidebar_container .topContainer .navbar a {
   text-decoration: none;
 }
-.sidebar_container .navbar a img {
+.sidebar_container .topContainer .navbar a img {
   width: 24px;
 }/*# sourceMappingURL=sidebar.css.map */
