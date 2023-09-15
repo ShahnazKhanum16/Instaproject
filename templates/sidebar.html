@@ -1,67 +1,81 @@
-{% block content %}
 {% load static %}
-<body>
-    <div>
-        <!-- heading start-->
-     <div class="Heading">
-        <h1> <span> <img src="static/images/instagram.png" alt="Instagram" width="24px" height ="24px"> </span>  Instagram <h1>
-     </div>
-     <!-- heading end-->
-     <!-- navbar starts-->
-     <div class="navbar">
-    <a href="{% url 'home' %}">
-        <div>
-            <h1> <span>  <img src="static/images/home.png" alt="Home" width="22px" height ="22px"></span>   Home </h1>
-        </div>
-    </a>
-    <a href="{% url 'search' %}">
-        <div>
-            <h1> <span>  <img src="static/images/transparency.png" alt="Search" width="22px" height ="22px"></span>   Search </h1>
-        </div>
-    </a>
-    <a href="{% url 'explore' %}">
+<link rel="stylesheet" href={% static 'css/sidebar.css' %}/>
+{% block content %}
 
-        <div>
-            <h1><span>  <img src="static/images/compass.png" alt="Explore" width="22px" height ="22px"></span>   Explore </h1>
+    <div class="sidebar_container">
+
+
+        <div class="topContainer">
+                    <!-- heading start-->
+            <div class="Heading">
+                <h1> Instagram </h1>
+            </div>
+            <!-- heading end-->
+            
+
+
+                <!-- navbar starts-->
+                <div class="navbar">
+                    <a href="{% url 'home' %}">
+         
+                        <img src="static/images/home.png" alt="Home" ><span>   Home </span>
+        
+                    </a>
+                    <a href="{% url 'search' %}">
+                        
+                        <img src="static/images/transparency.png" alt="Search" > <span>  Search </span>
+        
+                    </a>
+                    <a href="{% url 'explore' %}">
+        
+                        
+                              <img src="static/images/compass.png" alt="Explore" ><span>  Explore </span>
+        
+                    </a>
+                    <a href="{% url 'reels' %}">
+                        
+                              <img src="static/images/video.png" alt="Reels"><span>  Reels</span>
+        
+                    </a>
+                    <a href="{% url 'messages' %}">
+                        
+                              <img src="static/images/chat.png" alt="Messages"> <span> Messages </span>
+        
+                    </a>
+                    <a href="{% url 'notification' %}">
+                        
+                              <img src="static/images/heart.png" alt="Notification"> <span> Notification </span>
+        
+                    </a>
+                    <a href="{% url 'create' %}">
+                        
+                              <img src="static/images/tab.png" alt="Create"> <span>  Create</span>
+        
+                    </a>
+                    <a href="{% url 'profile' %}">
+                        
+                              <img src="static/images/user.png" alt="Profile"> <span>  Profile </span>
+        
+                    </a>
+        
+                    <!-- navbar ends-->
+                </div> 
+            </div>
+            
+            <!--more starts -->
+        <div class="bottomContainer">
+
+                <a href="{% url 'more' %}">
+                <img src="static/images/menu-burger.png" alt="More" width="24px" height ="24px"> <span>More</span>  
+                </a>
         </div>
-    </a>
-    <a href="{% url 'reels' %}">
-        <div>
-            <h1><span>  <img src="static/images/video.png" alt="Reels"width="22px" height ="22px"></span>   Reels</h1>
-        </div>
-    </a>
-    <a href="{% url 'messages' %}">
-        <div>
-            <h1><span>  <img src="static/images/chat.png" alt="Messages"width="22px" height ="22px"></span>   Messages </h1>
-        </div>
-    </a>
-    <a href="{% url 'notification' %}">
-        <div>
-            <h1><span>  <img src="static/images/heart.png" alt="Notification"width="22px" height ="22px"></span>   Notification </h1>
-        </div>
-    </a>
-    <a href="{% url 'create' %}">
-        <div>
-            <h1><span>  <img src="static/images/tab.png" alt="Create"width="22px" height ="22px"></span>    Create</h1>
-        </div>
-    </a>
-    <a href="{% url 'profile' %}">
-        <div>
-            <h1><span>  <img src="static/images/user.png" alt="Profile"width="22px" height ="22px"></span>    Profile </h1>
-        </div>
-    </a>
-     </div>
-     <!-- navbar ends-->
-     <!--more starts -->
-     <div>
-        <a href="{% url 'more' %}">
-        <h1><span>  <img src="static/images/menu-burger.png" alt="More" width="24px" height ="24px"></span>    More</h1>
-    </div>
-      </a>
+
+        
     <!-- more ends-->
-    </div> 
-   
-    
+
+    </div>
+
+
 
 
     {% endblock %}
