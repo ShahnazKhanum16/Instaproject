@@ -7,22 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}" />
     <title>Instagram Clone</title>
-    <style>
-        .main_container{
-            display: grid;
-            grid-template-columns: 1fr 3fr 1.5fr;
-        }
-         .main_container1,main_container2{
-            padding:1rem;
-        }
-    </style>
+    <link rel="stylesheet" href={% static 'css/style.css' %}/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main_container">
-        <div class="main_container1"> {% include "sidebar.html" %}</div>
-        <div class="main_container2">Posts</div>
-        <div class="main_container3">navbar</div>
+        <div class="inner_container_left"> {% include "sidebar.html" %}</div>
+        <div class="inner_container_center">Posts</div>
+        <div class="inner_container_right">navbar</div>
     </div>
 </body>
