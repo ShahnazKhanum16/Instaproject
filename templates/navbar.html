@@ -1,92 +1,56 @@
-{% load static %}
-<link rel="stylesheet" href={% static 'css/navbar.css' %}/>
+{% load static %} <link rel="stylesheet" href={% static 'css/navbar.css' %}/> 
 {% block content %}
 <div class="navbar_container">
+  <div class="navbar_top">
+    <div class="user_profile">
+      <img src="static/images/user.png" alt="userprofile" />
+      <div class="user_name">
+        <h5>Username</h5>
+        <span> name </span>
+      </div>
+    </div>
 
-    <div class="navbar_top"> 
-
-
-          <div class="user_profile">
-            <img src="static/images/user.png" alt="userprofile" >
-            <div class="user_name">
-                <h5>  Username </h5>
-                <span>  name </span>
-               </div>
-          </div>
-          
-            <div class="switch_profile">
-                <a href="">switch </a>
-            </div> 
+    <div class="switch_profile">
+      <a href="">switch </a>
+    </div>
   </div>
 
-   <div class="suggestion_main">
+  <div class="suggestion_main">
+    <p class="suggestion_left">Suggested for you</p>
 
-            <p class="suggestion_left">  Suggested for you </p>
+    <a class="suggestion_right" href=""> see All </a>
+  </div>
 
-            <a  class="suggestion_right" href=""> see All </a>
-          </div>
-
-    <div class="navbar_center"> 
-       <div class="navbar_center_profile">
-            <img src="static/images/user.png" alt="userprofile" >
-              <div class="user_name_center">
-                  <h5>  Username </h5>
-                  <span>  followed by </span>
-                 </div>
-            </div>
-            
-        <div class="follow">
-            <a href="">follow </a>
-        </div> 
-    </div>
-    <div class="nav_bottom">
-            <div class="links_main">
-                <ul class="links">
-                    <div class ="About">
-                    <li> <a href="">About </a></li>
-                    </div>
-                    <div class ="Help">
-                    <li> <a href="">Help </a></li>
-                    </div>
-                    <div class ="Press">
-                    <li> <a href="">Press </a></li>
-                    </div>
-                    <div class ="API">
-                    <li> <a href="">API </a></li>
-                    </div>
-                    <div class ="Jobs">
-                    <li> <a href="">Jobs</a> </li>
-                    </div>
-                    <div class ="Privacy">
-                    <li> <a href="">Privacy </a></li>
-                    </div>
-                    <div class ="Terms">
-                    <li> <a href="">Terms</a> </li>
-                    </div>
-                    <div class ="Locations">
-                    <li> <a href="">Locations </a> </li>
-                    </div>
-                   <div class ="Languages">
-                    <li> <a href="">Languages </a></li>
-                  </div>
-                   <div class ="Meta_Varified">
-                    <li> <a href="">Meta Verified </a></li>
-                </ul>
-            </div>
-
-               
-               
-
-            <div class="main">
-                <p> &copy; 2023 INSTAGRAM FROM META </p>
-            </div>
-
-        </div>
+  <div class="navbar_center">
+    <div class="navbar_center_profile">
+      <img src="static/images/user.png" alt="userprofile" />
+      <div class="user_name_center">
+        <h5>Username</h5>
+        <span> followed by </span>
+      </div>
     </div>
 
-
-
-
+    <div class="follow">
+      <a href="">follow </a>
+    </div>
+  </div>
+  <div class="nav_bottom">
+      <ul class="links">
+        <li><a href="">About </a></li>
+        <li><a href="">Help </a></li>
+        <li><a href="">Press </a></li>
+        <li><a href="">API </a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Privacy </a></li>
+        <li><a href="">Terms</a></li>
+        <li><a href="">Locations </a></li>
+        <li><a href="">Languages </a></li>
+        <li><a href="">Meta Verified </a></li>
+      </ul>
+      <div class="main">
+        <p>&copy; 2023 INSTAGRAM FROM META</p>
+      </div>
+  </div>
 </div>
 
 {% endblock %}
