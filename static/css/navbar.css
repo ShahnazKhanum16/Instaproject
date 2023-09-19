@@ -4,9 +4,33 @@
   padding-right: 90px;
 }
 .navbar_container .navbar_top {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.navbar_container .navbar_top .user_profile {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
 }
 .navbar_container .navbar_top .user_profile img {
+  width: 40px;
+}
+.navbar_container .suggestion_main {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.navbar_container .navbar_center {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.navbar_container .navbar_center .user_profile {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.navbar_container .navbar_center .user_profile img {
   width: 40px;
 }/*# sourceMappingURL=navbar.css.map */
