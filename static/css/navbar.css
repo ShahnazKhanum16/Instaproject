@@ -26,11 +26,14 @@
   justify-content: space-between;
   padding-bottom: 30px;
 }
-.navbar_container .navbar_center .user_profile {
+.navbar_container .navbar_center .navbar_center_profile {
   display: flex;
   justify-content: space-evenly;
   gap: 15px;
 }
-.navbar_container .navbar_center .user_profile img {
-  width: 40px;
+.navbar_container .navbar_center .navbar_center_profile img {
+  width: 30px;
+}
+.navbar_container .nav_bottom .links_main .links {
+  display: flex;
 }/*# sourceMappingURL=navbar.css.map */
