@@ -1,0 +1,22 @@
+.navbar_container{
+    height: 100vh;
+    padding-top: 60px;
+    padding-right: 90px;
+
+        
+
+    .navbar_top{
+        display: grid;
+            grid-template-columns: 1fr 2fr;
+
+        .user_profile{
+            img{
+                 width: 40px;
+            }
+         }
+        }
+        
+    }
+    
+
+
