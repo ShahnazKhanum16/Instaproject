@@ -1,52 +1,77 @@
-.navbar_container{
+.navbar_container {
     height: 100vh;
     padding-top: 60px;
     padding-right: 90px;
-    .navbar_top{
+
+    .navbar_top {
         display: flex;
         justify-content: space-between;
         padding-bottom: 30px;
 
-        .user_profile{
+        .user_profile {
             display: flex;
             justify-content: space-evenly;
-            gap:15px;
-            img{
-                 width: 40px;
-    
+            gap: 15px;
+
+            img {
+                width: 40px;
             }
-         }
         }
-    .suggestion_main{
-        display: flex;
-        justify-content:space-between;
-        padding-bottom: 30px;
-
-
     }
-    .navbar_center{
+
+    .suggestion_main {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+
+    .navbar_center {
         display: flex;
         justify-content: space-between;
         padding-bottom: 30px;
 
-        .navbar_center_profile{
+        .navbar_center_profile {
             display: flex;
             justify-content: space-evenly;
-            gap:15px;
-            img{
-                 width: 30px;
-    
+            gap: 15px;
+
+            img {
+                width: 40px;
             }
-         }
-        }
-    .nav_bottom{
-        .links_main{
-            .links{
-                display: flex;  
-            }
-        }
         }
     }
-    
 
+    .nav_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
 
+        ul{
+            list-style: none;
+            // display: flex;
+            display: flex;
+            flex-wrap: wrap;
+            // gap: 5px;
+            li{
+                padding: 0;
+                a{
+                    text-decoration: none;
+                    font-size: 10px;
+                    color: grey;
+                }
+
+                &::after{
+                    content: ".";
+                    padding: 4px;
+                }
+            }
+        }
+
+        .main{
+            p{
+                font-size: 12px;
+                color: grey;
+            }
+        }
+    }
+}
