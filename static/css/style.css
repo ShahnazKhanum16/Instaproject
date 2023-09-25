@@ -14,6 +14,36 @@
 .main_container .inner_container_center {
   flex: 7;
 }
+.main_container .inner_container_center .nav_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.main_container .inner_container_center .nav_bottom ul {
+  width: 600px;
+  align-items: center;
+  padding-left: 50px;
+  padding-left: 40px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main_container .inner_container_center .nav_bottom ul li {
+  padding: 0;
+}
+.main_container .inner_container_center .nav_bottom ul li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: grey;
+}
+.main_container .inner_container_center .nav_bottom ul li::after {
+  content: ".";
+  padding: 5px;
+}
+.main_container .inner_container_center .nav_bottom .main p {
+  font-size: 15px;
+  color: grey;
+}
 .main_container .inner_container_right {
   flex: 3;
 }/*# sourceMappingURL=style.css.map */

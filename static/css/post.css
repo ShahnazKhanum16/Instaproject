@@ -16,6 +16,15 @@
   justify-content: space-between;
   padding-bottom: 60px;
 }
+.post_main .post_page .post_top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 600px;
+  height: 100%;
+  align-items: center;
+  padding-left: 50px;
+}
 .post_main .post_page .post_top .profile {
   display: flex;
   justify-content: space-evenly;

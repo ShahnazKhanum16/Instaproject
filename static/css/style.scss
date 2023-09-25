@@ -14,6 +14,44 @@
     }
     .inner_container_center{
         flex: 7;
+        .nav_bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+           
+        
+            ul{
+                width: 600px;
+                align-items: center;
+                padding-left: 50px;
+                padding-left: 40px;
+                list-style: none;
+                //display:flex;
+                display: flex;
+                flex-wrap: wrap;
+                // gap: 5px;
+                li{
+                    padding: 0;
+                    a{
+                        text-decoration: none;
+                        font-size: 13px;
+                        color: grey;
+                    }
+        
+                    &::after{
+                        content: ".";
+                        padding: 5px;
+                    }
+                }
+            }
+        
+            .main{
+                p{
+                    font-size: 15px;
+                    color: grey;
+                }
+            }
+        }
     }
     .inner_container_right{
         flex: 3;

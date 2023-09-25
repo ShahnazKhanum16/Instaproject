@@ -21,9 +21,13 @@
        }
     .post_page{
         .post_top{
-            //display: flex;
-           // justify-content: space-between;
-           // padding-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            padding : 10px 20px;
+            width: 600px;
+            height: 100%;
+            align-items: center;
+            padding-left: 50px;
             .profile{
               display: flex;
               justify-content: space-evenly;
@@ -50,4 +54,5 @@
             padding-left: 50px;
          }
    }
+   
 }
