@@ -1,0 +1,35 @@
+.post_main {
+  padding-top: 60px;
+  padding-right: 90px;
+  padding-left: 90px;
+}
+.post_main .story_main {
+  display: flex;
+  gap: 25px;
+}
+.post_main .story_main .story_self img {
+  width: 60px;
+}
+.post_main .story_main .story_others img {
+  width: 60px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+.post_main .post_page .post_top .profile {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+}
+.post_main .post_page .post_top .profile img {
+  width: 40px;
+}
+.post_main .post_page .post_top .profile .option img {
+  width: 40px;
+}
+.post_main .all_post img {
+  width: 600px;
+  height: 100%;
+  align-items: center;
+  padding-left: 50px;
+}/*# sourceMappingURL=post.css.map */

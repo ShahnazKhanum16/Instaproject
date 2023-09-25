@@ -1,0 +1,33 @@
+{% load static %} <link rel="stylesheet" href={% static 'css/post.css' %}/> 
+{% block content %}
+<div class="post_main">
+    <div class="story_main">
+       <div class="story_self">
+         <img src="static/images/user.png" alt="user" >
+       </div>
+       <div class="story_others">
+        <img src="static/images/user.png" alt="user" >
+       </div>
+    </div>
+    <div class="post_page">
+       
+        <div class="post_top">
+            <div class="profile">
+                <img src="static/images/user.png" alt="user" >
+                <div class="name">
+                  <h5>shahnaz khanum</h5>
+                  <span> shahnaz  </span>
+                 </div>
+              </div>
+            <div class="option">
+                <img src="static/images/more.png" alt="user" >
+            </div>
+        </div>
+
+
+        <div class="all_post">
+            <img src="static/images/post.jpg" alt="user" >
+        </div>
+    </div>
+</div>
+{% endblock %}
